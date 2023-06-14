@@ -1,0 +1,157 @@
+CSS
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+  background-color:var(--main-blue);
+}
+body{
+      font-family: 'Poppins', sans-serif;;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+#navbar{
+  position:fixed;
+  width:100%;
+  height:10%;
+  top:0;
+  left:0;
+  border-bottom:rgba(0,0,0,0.7) solid;
+  background-color:var(--main-red);
+  
+  font-size:20px;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+ 
+}
+nav > ul{
+  list-style-type:none;
+   display:flex; justify-content:space-evenly;
+    flex-wrap: wrap;
+  align-items: center;
+}
+main {
+  padding-top: 30px;
+  width:100%;
+}
+#welcome-section{
+   padding: 10rem 2rem;
+  height:20%;
+  width:100%;
+  text-align:center;
+  background-color:var(--main-gray);
+}
+h1,h2{
+  font-size:40px;
+  color:white;
+}p{
+  font-size:20px;
+  color:var(--main-red);
+}
+#skills{
+   padding: 1rem 2rem;
+  color:var(--main-blue);
+  text-align:center;
+  background-color:grey;
+  width:100%;
+  height:50%;
+}
+h4{
+  color:black;
+  font-size:18px;
+
+}
+#projects{
+  width:100%;
+  height:auto;
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+}
+
+#proj{
+    display: grid;    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+#contact{
+  
+  width:100%;
+  height:20%;
+  background-color:var(--main-gray);
+  padding: 10rem 2rem;
+}
+.icons{
+  display:flex;
+  flex-direction:row;
+  align-items:center;justify-content:space-evenly;
+  font-size:18px;
+}
+.blink{
+  transition:0.3s;
+}
+.blink:hover{
+  background-color:var(--main-gray);
+transform:translateY(8px);
+}
+.proj{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+}
+img{
+  width:50%;
+  height:70%;
+}
+
+
+
+
+.foot{
+
+  height:20px;
+  text-align:center;
+  background-color:var(--main-gray);
+  width:100%;
+  padding: 2rem;
+  border-top:4px solid var(--main-red);
+}
+.foot p{
+  margin-top:2px;
+  color:white;
+  
+}
+#profile-link:hover{
+background-color:var(--main-red);
+color:var(--main-gray);
+}
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn {
+  width:15%;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
